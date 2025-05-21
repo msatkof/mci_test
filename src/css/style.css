@@ -39,6 +39,14 @@ img {
     background:
         linear-gradient(90deg, #000000BF 0%, #0000004D 56%),
         url(../img/bg-team.webp) center center / cover no-repeat;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 200px;
+    }
+
+    @media screen and (max-width: 767px) {
+        min-height: 360px;
+    }
 }
 
 .elems-container {
@@ -56,6 +64,18 @@ img {
             font-weight: 700;
         }
     }
+
+    @media screen and (max-width: 1260px) {
+        margin: 0 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        h2 {
+            padding-top: 40px;
+        }
+    }
+
+
 }
 
 .team-text {
@@ -66,12 +86,22 @@ img {
     font-size: 19px;
     color: var(--light-color);
     font-weight: 200;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        line-height: normal
+    }
 }
 
 .team-btns-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+    }
 }
 
 .team_btn {
@@ -86,6 +116,10 @@ img {
     position: relative;
     margin-top: 200px;
 
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+
 }
 
 .hex-elem-top {
@@ -94,7 +128,7 @@ img {
 }
 
 .hex-elem-bottom {
-    bottom: 0;
+    bottom: 20px;
     right: 40px;
 }
 
